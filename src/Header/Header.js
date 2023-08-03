@@ -1,10 +1,16 @@
 // import logo from './logo.svg';
+import { useState } from 'react';
 import './Header.css';
+import MySideNav from './MySideNav/MySideNav';
+
+
 
 function Header() {
+
   return (
     <div className="App">
       <header className="App-header">
+        <MySideNav/>
         <div classname='Title'>
           <h1 className='Title1'>PIZZA</h1>
           <h1 className='Title2'>GRECO</h1>
@@ -22,18 +28,6 @@ function Header() {
             <span className='dot'></span>
           </div>
         </div>
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        {/* <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a> */}
       </header>
     </div>
   );
